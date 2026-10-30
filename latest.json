@@ -1,5 +1,59 @@
 {
   "schema": 1,
-  "products": {},
-  "_note": "OTR firmware paused 2026-10-30 while a startup problem is checked"
+  "products": {
+    "otr": {
+      "name": "OTR - Orion Tactical Radio",
+      "board": "heltec_v4",
+      "version": "0.1.2",
+      "released": "2026-10-30",
+      "notes": [
+        "The Bluetooth pairing PIN now comes from the radio's own chip ID, so it is the same at every restart (and after a full erase).",
+        "Fixes a startup problem in 0.1.1 that could leave the radio dark."
+      ],
+      "variants": {
+        "mph": {
+          "update": {
+            "path": "otr/mph/otr-heltec_v4-mph-update.bin",
+            "offset": 65536,
+            "size": 1739264,
+            "sha256": "e21ff6e9b18fee9002a93f4c8ca41cd7f554cf2cc96de4479400d030b8b2f933",
+            "extra": [
+              {
+                "offset": 57344,
+                "length": 8192,
+                "fill": 255
+              }
+            ]
+          },
+          "merged": {
+            "path": "otr/mph/otr-heltec_v4-mph-merged.bin",
+            "offset": 0,
+            "size": 1804800,
+            "sha256": "f420cf6368601b6debc01978a7b9db81b121a74031af96606ad372b2c8acea1d"
+          }
+        },
+        "metric": {
+          "update": {
+            "path": "otr/metric/otr-heltec_v4-metric-update.bin",
+            "offset": 65536,
+            "size": 1739264,
+            "sha256": "feb088942f25d751fdb8a2c65bc30ee0e36574ef84b2a1bf83e5a6892ffa1dc5",
+            "extra": [
+              {
+                "offset": 57344,
+                "length": 8192,
+                "fill": 255
+              }
+            ]
+          },
+          "merged": {
+            "path": "otr/metric/otr-heltec_v4-metric-merged.bin",
+            "offset": 0,
+            "size": 1804800,
+            "sha256": "1f2bc8bfdcc6b56470fce988bf50a2805df55a7e7a2821e6aca656fa5fb49f35"
+          }
+        }
+      }
+    }
+  }
 }
