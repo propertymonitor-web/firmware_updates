@@ -54,6 +54,39 @@
           }
         }
       }
+    },
+    "cairn": {
+      "name": "CAIRN - Cairn Tactical Unit (Bluetooth build)",
+      "board": "heltec_v4",
+      "version": "1.4.1",
+      "released": "2026-11-01",
+      "notes": [
+        "Remote units: bind companions and repeaters to this CAIRN by radio ID, each with a CRU ID and a name (cairn unit ... commands, Units tab in the dashboard).",
+        "Not yet run on real hardware."
+      ],
+      "variants": {
+        "mph": {
+          "update": {
+            "path": "cairn/mph/cairn-heltec_v4-mph-update.bin",
+            "offset": 65536,
+            "size": 1723520,
+            "sha256": "74da880279b8beae09f9546fd65b055909275fdd0f8d655bc2bb9179605d6fc5",
+            "extra": [
+              {
+                "offset": 57344,
+                "length": 8192,
+                "fill": 255
+              }
+            ]
+          },
+          "merged": {
+            "path": "cairn/mph/cairn-heltec_v4-mph-merged.bin",
+            "offset": 0,
+            "size": 1789056,
+            "sha256": "d0a09eaa65aac5a7e5ccd500af46130cf5967d6a81c1224f7f7b7140bb6a1de8"
+          }
+        }
+      }
     }
   }
 }
