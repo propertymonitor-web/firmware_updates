@@ -87,6 +87,165 @@
           }
         }
       }
+    },
+    "matrix": {
+      "name": "PROJECT MATRIX - Heltec V4 R2",
+      "board": "heltec_v4",
+      "version": "0.1.0",
+      "released": "2026-11-02",
+      "notes": [
+        "First PROJECT MATRIX firmware release: the OTR tactical firmware with the Matrix splash and the extra data the Matrix dashboard shows."
+      ],
+      "variants": {
+        "mph": {
+          "update": {
+            "path": "matrix/mph/matrix-heltec_v4-mph-update.bin",
+            "offset": 65536,
+            "size": 1739744,
+            "sha256": "4eb391fb1ca955481453dfc95fcb266bd16bec969af5ffb6bf7f38c335b46d20",
+            "extra": [
+              {
+                "offset": 57344,
+                "length": 8192,
+                "fill": 255
+              }
+            ]
+          },
+          "merged": {
+            "path": "matrix/mph/matrix-heltec_v4-mph-merged.bin",
+            "offset": 0,
+            "size": 1805280,
+            "sha256": "bc0e65da836c300e91635361e47ed4ffa3c205e58d437a2345932e9a28e73daf"
+          }
+        },
+        "metric": {
+          "update": {
+            "path": "matrix/metric/matrix-heltec_v4-metric-update.bin",
+            "offset": 65536,
+            "size": 1739744,
+            "sha256": "b0aa68576a1b957a6962ee2edd774c72c113b1c004b476458f8c85c4048ebc76",
+            "extra": [
+              {
+                "offset": 57344,
+                "length": 8192,
+                "fill": 255
+              }
+            ]
+          },
+          "merged": {
+            "path": "matrix/metric/matrix-heltec_v4-metric-merged.bin",
+            "offset": 0,
+            "size": 1805280,
+            "sha256": "e31b625c3af93e1234d75d9a93e2b646b9a50f1150578d67c76e1f5cda38acd0"
+          }
+        }
+      }
+    },
+    "matrix_r8": {
+      "name": "PROJECT MATRIX - Heltec V4 R8",
+      "board": "heltec_v4_r8",
+      "version": "0.1.0",
+      "released": "2026-11-02",
+      "notes": [
+        "First PROJECT MATRIX firmware release: the OTR tactical firmware with the Matrix splash and the extra data the Matrix dashboard shows. (R8 build - not yet run on a radio)"
+      ],
+      "variants": {
+        "mph": {
+          "update": {
+            "path": "matrix/mph/matrix-heltec_v4_r8-mph-update.bin",
+            "offset": 65536,
+            "size": 1743264,
+            "sha256": "c7f5ad5760fdb4a1c4ebe5d99d1317197f3578a477982dc74d94dcc4274e16c3",
+            "extra": [
+              {
+                "offset": 57344,
+                "length": 8192,
+                "fill": 255
+              }
+            ]
+          },
+          "merged": {
+            "path": "matrix/mph/matrix-heltec_v4_r8-mph-merged.bin",
+            "offset": 0,
+            "size": 1808800,
+            "sha256": "90f546af799b8087f9e88e93e77e158e80fec83ab0e073ce467cecf49e97d7fe"
+          }
+        },
+        "metric": {
+          "update": {
+            "path": "matrix/metric/matrix-heltec_v4_r8-metric-update.bin",
+            "offset": 65536,
+            "size": 1743248,
+            "sha256": "7aa618da30b8e9f9aa1327d773dc3acaa52467a08ca04e253c02426614e5e257",
+            "extra": [
+              {
+                "offset": 57344,
+                "length": 8192,
+                "fill": 255
+              }
+            ]
+          },
+          "merged": {
+            "path": "matrix/metric/matrix-heltec_v4_r8-metric-merged.bin",
+            "offset": 0,
+            "size": 1808784,
+            "sha256": "ebac868d8ac3324f4a4f3aef641326bd2bac065e179503bd9454d101818def7e"
+          }
+        }
+      }
+    },
+    "matrix_v3": {
+      "name": "PROJECT MATRIX - Heltec V3",
+      "board": "heltec_v3",
+      "version": "0.1.0",
+      "released": "2026-11-02",
+      "notes": [
+        "First PROJECT MATRIX firmware release: the OTR tactical firmware with the Matrix splash and the extra data the Matrix dashboard shows. (V3 build - not yet run on a radio)"
+      ],
+      "variants": {
+        "mph": {
+          "update": {
+            "path": "matrix/mph/matrix-heltec_v3-mph-update.bin",
+            "offset": 65536,
+            "size": 1741552,
+            "sha256": "dcbd71909437a63b66aa11250f3d966adf280c5cf2e7093251ef40cf60573e0d",
+            "extra": [
+              {
+                "offset": 57344,
+                "length": 8192,
+                "fill": 255
+              }
+            ]
+          },
+          "merged": {
+            "path": "matrix/mph/matrix-heltec_v3-mph-merged.bin",
+            "offset": 0,
+            "size": 1807088,
+            "sha256": "7bfef16b31f03a56446b59a5e46fa6b38436a3fc588bef2207222838d3b0b81a"
+          }
+        },
+        "metric": {
+          "update": {
+            "path": "matrix/metric/matrix-heltec_v3-metric-update.bin",
+            "offset": 65536,
+            "size": 1741536,
+            "sha256": "7fa3c4ed1fa9619d20c30a1b120610ae552b41d1f96c233679ceab6714e262fe",
+            "extra": [
+              {
+                "offset": 57344,
+                "length": 8192,
+                "fill": 255
+              }
+            ]
+          },
+          "merged": {
+            "path": "matrix/metric/matrix-heltec_v3-metric-merged.bin",
+            "offset": 0,
+            "size": 1807072,
+            "sha256": "f3846aa8f7743aeb16dc7520032c4d4d1e73e7fffcd98c514aaa812fb8ba2c20"
+          }
+        }
+      }
     }
   }
 }
